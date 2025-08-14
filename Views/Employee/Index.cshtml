@@ -1,0 +1,22 @@
+﻿@model List<Learning.ViewModel.EmployeeVM>
+@{
+    ViewData["Title"] = "Employee List";
+}
+</h6>
+<a asp-controller="Patient" asp-action="Create" class="btn btn-primary">
+    New Patient
+</a>
+
+<h2>Employee List</h2>
+
+<form method="get">
+    <input type="text" name="searchTerm" value="@ViewBag.SearchTerm" placeholder="Search by name..." />
+    <button type="submit">Search</button>
+</form>
+
+<ul>
+    @foreach (var employee in Model)
+    {
+        <li>@employee.FName</li>
+    }
+</ul>
