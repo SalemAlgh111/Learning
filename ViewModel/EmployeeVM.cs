@@ -23,7 +23,11 @@ namespace Learning.ViewModel
 
         public string Department { get; set; }
 
-    
+
+
+        public string? Search { get; set; }
+        public List<Employee> Employees { get; set; } = new List<Employee>();
+
 
     }
 }

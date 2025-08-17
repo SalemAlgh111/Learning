@@ -1,8 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Learning.Models;
-
-using Microsoft.EntityFrameworkCore;
-
 namespace Learning.Models
 {
     public class AppDbContext : DbContext

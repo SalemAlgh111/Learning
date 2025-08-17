@@ -1,10 +1,10 @@
-﻿@model List<Learning.ViewModel.EmployeeVM>
+﻿@model Learning.ViewModel.EmployeeVM
 @{
     ViewData["Title"] = "Employee List";
 }
 </h6>
-<a asp-controller="Patient" asp-action="Create" class="btn btn-primary">
-    New Patient
+<a asp-controller="Employee" asp-action="Create" class="btn btn-primary">
+    New Employee
 </a>
 
 <h2>Employee List</h2>
@@ -15,8 +15,5 @@
 </form>
 
 <ul>
-    @foreach (var employee in Model)
-    {
-        <li>@employee.FName</li>
-    }
+  
 </ul>
